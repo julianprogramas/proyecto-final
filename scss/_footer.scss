@@ -1,0 +1,87 @@
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color:#0b83d4;
+    padding: 20px 0;
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin: auto;
+    border: 8px black solid;
+
+
+
+    .cajas-footer> {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        text-decoration: none;
+        width: 10%;
+        
+
+
+    }
+
+    .cajas-footer img {
+        width: 20%;
+        margin-right: 20px;
+    }
+
+    .cajas-footer h4 {
+        color: black;
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 30px;
+        margin-right: 20px;
+        font-family: cursive;
+
+
+    }
+
+    .cajas-footer a {
+        text-decoration: none;
+        display: block;
+        color: rgba(245, 222, 179, 0.727);
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 10px;
+        font-family: cursive;
+        
+
+
+        
+
+    }
+
+    .link-footer :hover {
+        color: black;
+        font-family: cursive;
+
+    }
+
+    .cajas-footer a {
+        display: inline-block;
+        font-family: cursive;
+         i {
+            display: inline-block;
+            font-size: 20px;
+            color: white;
+            border: 1px solid black;
+            border-radius: 50%;
+            width: 38px;
+            height: 38px;
+            line-height: 36px;
+            cursor: pointer;
+            margin-top: 20px;
+            text-align: center;
+            transition: ease-in-out .3s;
+        }
+
+    }
+
+
+
+    .iconos-redes i:hover {
+        color: black;
+        background-color: white;
+    }
+}

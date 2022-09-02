@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Link css -->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- titulo -->
+    <title>Boedo percucion</title>
+</head>
+
+<body>
+    <!-- Este es mi encabezado -->
+    <header>
+        <nav class="navbar navbar-nav-scroll bg-info  ">
+
+            <div class="container-fluid">
+                <img src="../boedo/00-logo.jpg" alt="" width="100" height="100">
+                <a class="navbar-brand" href="../index.html">Boedo percucion</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/carpetas/catalogo.html">Catalogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/carpetas/pedidos.html">Dejanos tu
+                                pedido</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/carpetas/ubicacion.html">Ubicacion</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <!-- Este es mi menu -->
+    <main class="usuario">
+
+        <div class="reg col-xs-12 col-sm-7">
+            <div class="user_wrapper">
+                <h3 class="u-data">Registro</h3>
+
+                <div id="form_datos">
+                    <form action="/User/Register" method="post"><input name="__RequestVerificationToken" type="hidden"
+                            value="kgVtqp69ZRu1IVwAUFth9h_QPozcfIg1fKpYaZdLfWaRtuSczLEBFjpHRUHVH4os8_CNA-8vGts8R3ZWU98cdPegBMDrVXT7cOzP9gWCbCo1" />
+                        <fieldset class="validar">
+
+
+
+
+
+
+                            <div class="row">
+                                <div class="form-group col-sm-12">
+                                    <label for="Username">Usuario (Email) <span class="required">*</span></label>
+                                    <input id="Username" type="email" value="" name="Username"
+                                        data-val-required="El campo Usuario es obligatorio."
+                                        data-val-email="El campo Usuario debe ser un mail." data-val="true"
+                                        class="form-control">
+                                    <span data-valmsg-replace="true" data-valmsg-for="Username"></span>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="form-group col-sm-6">
+                                    <label for="Password">Contraseña <span class="required">*</span></label>
+                                    <input data-val="true" data-val-required="El campo Contraseña es obligatorio."
+                                        id="Password" name="Password" type="password" value=""
+                                        class="password form-control" />
+                                    <span data-valmsg-replace="true" data-valmsg-for="Password"></span>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="rPassword">Repetir Contraseña <span class="required">*</span></label>
+                                    <input data-val="true" data-val-equalto="Las contraseñas deben ser iguales"
+                                        data-val-equalto-other="*.Password"
+                                        data-val-required="El campo Repetir Contraseña es obligatorio." id="rPassword"
+                                        name="rPassword" type="password" value="" class="password form-control" />
+                                    <span data-valmsg-replace="true" data-valmsg-for="rPassword"></span>
+                                </div>
+                            </div>
+
+
+                            <div class="row_line"></div>
+
+
+                            <div class="row">
+                                <div class="form-group col-xs-12 col-sm-6">
+                                    <label for="FirstName">Nombre <span class="required">*</span></label>
+                                    <input type="text" data-val="true"
+                                        data-val-required="El campo Nombre es obligatorio" name="FirstName"
+                                        class="form-control" id="FirstName">
+                                    <span data-valmsg-replace="true" data-valmsg-for="FirstName"></span>
+                                </div>
+                                <div class="form-group col-xs-12 col-sm-6">
+                                    <label for="LastName">Apellido <span class="required">*</span></label>
+                                    <input type="text" data-val="true"
+                                        data-val-required="El campo Apellido es obligatorio" name="LastName"
+                                        class="form-control" id="LastName">
+                                    <span data-valmsg-replace="true" data-valmsg-for="LastName"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-xs-12 col-sm-6">
+                                    <label for="_var_field_Genero">Genero <span class="required">*</span></label>
+                                    <div class="customselect">
+                                        <select id="_var_field_Genero" name="_var_field_Genero"
+                                            data-val-required="El campo Genero es obligatorio" class="form-control"
+                                            data-val="true">
+                                            <option value="Masculino">Masculino</option>
+                                            <option value="Femenino">Femenino</option>
+                                        </select>
+                                    </div>
+                                    <span data-valmsg-replace="true" data-valmsg-for="_var_field_Genero"></span>
+                                </div>
+                                <div class="form-group col-xs-12 col-sm-6">
+                                    <label for="IdNumber">DNI <span class="required">*</span></label>
+                                    <input type="number" data-val="true"
+                                        data-val-required="El campo Nombre es obligatorio" name="IdNumber"
+                                        class="form-control" id="IdNumber">
+                                    <span data-valmsg-replace="true" data-valmsg-for="IdNumber"></span>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="form-group col-xs-12 col-sm-6">
+                                    <label for="Address">Calle <span class="required">*</span></label>
+                                    <input type="text" data-val="true" data-val-required="El campo Calle es obligatorio"
+                                        name="Address" class="form-control" id="Address">
+                                    <span data-valmsg-replace="true" data-valmsg-for="Address"></span>
+                                </div>
+                                <div class="form-group col-xs-6 col-sm-3">
+                                    <label for="StreetNumber">Nro. <span class="required">*</span></label>
+                                    <input type="text" data-val="true" data-val-required="El campo Nro. es obligatorio"
+                                        name="StreetNumber" class="form-control" id="StreetNumber">
+                                    <span data-valmsg-replace="true" data-valmsg-for="StreetNumber"></span>
+                                </div>
+                                <div class="form-group col-xs-6 col-sm-3">
+                                    <label for="AddressLine1">Piso/Depto.</label>
+                                    <input type="text" data-val="false" name="AddressLine1" class="form-control"
+                                        id="AddressLine1">
+                                    <span data-valmsg-replace="true" data-valmsg-for="AddressLine1"></span>
+                                </div>
+                            </div>
+
+
+                            
+                            <div class="row">
+                                <div class="form-group col-xs-12 col-sm-6 sel country">
+                                    <label for="_g_country">País <span class="required">*</span></label>
+                                    <div class="customselect"><select id="_g_country" name="Country"
+                                            data-location="country" data-default=""
+                                            data-val-required="Debe seleccionar un País." class="form-control"
+                                            data-val="true">
+                                            <option value="">Argentina</option>
+                                            <option value="Femenino">Brazil</option>
+                                        </select>
+                                    </div>
+                                    <span data-valmsg-replace="true" data-valmsg-for="Country"></span>
+                                </div>
+                                <div class="form-group col-xs-12 col-sm-6 sel">
+                                    <label for="_g_state">Provincia <span class="required">*</span></label>
+                                    <div class="customselect"><select id="_g_state" name="State" data-location="state"
+                                            data-parent="_g_country" data-default=""
+                                            data-val-required="Debe seleccionar una provincia." class="form-control"
+                                            data-val="true">
+                                            <option value="">GBA-SUR</option>
+                                            <option value="">CABA</option>
+                                        </select></div>
+                                    <span data-valmsg-replace="true" data-valmsg-for="State"></span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-xs-12 col-sm-6 sel">
+                                    <label for="_g_city">Partido <span class="required">*</span></label>
+                                    <div class="customselect"><select id="_g_city" name="City" data-location="city"
+                                            data-parent="_g_state" data-default=""
+                                            data-val-required="Debe seleccionar un partido" class="form-control"
+                                            data-val="true">
+                                            <option value="">Avellaneda</option>
+                                            <option value="">Lanus</option>
+                                            <option value="">Boedo</option>
+                                            <option value="">Palermo</option>
+                                        </select></div>
+                                    <span data-valmsg-replace="true" data-valmsg-for="City"></span>
+                                </div>
+                                <div class="form-group col-xs-12 col-sm-6 sel">
+                                    <label for="_g_town">Localidad <span class="required">*</span></label>
+                                    <div class="customselect"><select id="_g_town" name="Town" data-location="town"
+                                            data-parent="_g_city" data-default=""
+                                            data-val-required="Debe seleccionar una localidad" class="form-control"
+                                            data-val="true">
+                                            <option value="">Piñeyro</option>
+                                            <option value="">Gerli</option>
+                                            <option value="">Boedo</option>
+                                            <option value="">Cañitas</option>
+                                        </select></div>
+                                    <span data-valmsg-replace="true" data-valmsg-for="Town"></span>
+                                </div>
+                                <div class="form-group col-xs-12 otherCountry" style="display: none">
+                                    <label for="AddressLine2">Provincia / Partido / Localidad</label>
+                                    <input type="text" data-val="false" name="AddressLine2" class="form-control"
+                                        id="AddressLine2">
+                                    <span data-valmsg-replace="true" data-valmsg-for="AddressLine2"></span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+
+
+                                <div class="form-group col-xs-12 col-sm-6">
+                                    <label for="PostalCode">Código Postal <span class="required">*</span></label>
+                                    <input id="PostalCode" name="PostalCode" type="digits"
+                                        data-val-required="El campo Código Postal es obligatorio" class="form-control"
+                                        data-val="true" />
+                                    <span data-valmsg-for="PostalCode" data-valmsg-replace="true"></span>
+                                </div>
+                                <div class="form-group col-xs-12 col-sm-6">
+                                    <label for="Phone">Teléfono <span class="required">*</span></label>
+                                    <input id="Phone" name="Phone" type="digits"
+                                        data-val-required="El campo Teléfono es obligatorio" class="form-control"
+                                        data-val="true" data-val-digits="El campo debe ser sólo numérico." />
+                                    <span data-valmsg-for="Phone" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+
+
+
+                            <input type="hidden" name="ReturnUrl" />
+                            <input type="hidden" name="EMail" value="USERNAME" />
+                            <input type="hidden" name="ProfileId" value="3" />
+
+                            <!---->
+                            <div class="row">
+                                <div class="form-group col-sm-12">
+                                    <p class="pull-left"><span class="required">*</span> Campos obligatorios</p>
+                                    <input type="submit" class="btn btn-primary pull-right" value="Crear Cuenta" />
+                                </div>
+                            </div>
+
+                        </fieldset>
+                    </form>
+    </main>
+    <!-- Este es mi footer -->
+    <footer>
+        <div class="cajas-footer">
+            <img src="/boedo/00-logo.jpg" alt="">
+        </div>
+        <div class="cajas-footer">
+            <h4>Julian calvo</h4>
+            <div class="link-footer"><a href="https://github.com/julianprogramas">trabaja con nosotros</a></div>
+
+        </div>
+        <div class="cajas-footer">
+            <h4>Redes sociales</h4>
+            <div class="iconos-redes">
+                <a href="https://www.youtube.com/watch?v=p4Iknm5mzyY&t=16s&ab_channel=ElGuerreroOficial"><i
+                        class="fa-brands fa-youtube"></i></a>
+
+                <a href="https://www.instagram.com/boedopercusion/?hl=es"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/BoedoPercusion"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!-- script footer -->
+    <script src="https://kit.fontawesome.com/fe4f1708a6.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.navbar {
+  background: #0b83d4 !important; }
+
+h1 {
+  font-size: 50px; }
+
+h2 {
+  font-size: 40px; }
+
+main #boedo {
+  background: linear-gradient(rgba(1, 55, 87, 0.589), rgba(1, 25, 39, 0.589)), url(/boedo/00-logo.jpg);
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Alumni Sans Collegiate One', sans-serif; }
+  main #boedo .presentacion {
+    color: #000000;
+    font-family: 'Alumni Sans Collegiate One', sans-serif; }
+    main #boedo .presentacion h1 {
+      color: black;
+      font-family: 'Alumni Sans Collegiate One', sans-serif;
+      font-family: 'Poppins', sans-serif; }
+    main #boedo .presentacion p {
+      font-family: comic sans-serif Impact, Haettenschweiler, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+    main #boedo .presentacion ul {
+      padding-top: 30px; }
+      main #boedo .presentacion ul li {
+        list-style: none;
+        text-align: center;
+        padding-top: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+
+main #cartas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  border-radius: 100px; }
+  main #cartas .nosotros {
+    padding-top: 50px;
+    background: rgba(0, 4, 255, 0.445);
+    width: 300px;
+    height: 400px;
+    border-radius: 100px;
+    border: 1px black solid;
+    color: #000000; }
+    main #cartas .nosotros p {
+      font-family: cursive; }
+  main #cartas .pedidos {
+    padding-top: 50px;
+    background: rgba(0, 4, 255, 0.445);
+    width: 300px;
+    height: 400px;
+    border: 1px black solid;
+    border-radius: 100px;
+    color: #000000; }
+    main #cartas .pedidos p {
+      font-family: cursive; }
+  main #cartas .ubiacion {
+    padding-top: 50px;
+    background: rgba(0, 4, 255, 0.445);
+    width: 300px;
+    height: 400px;
+    border: 1px black solid;
+    border-radius: 100px;
+    color: #000000; }
+    main #cartas .ubiacion p {
+      font-family: cursive; }
+
+main {
+  background: #0b83d4; }
+  main #fotos {
+    background: #0b83d4; }
+    main #fotos h2 {
+      text-align: center;
+      color: black;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+    main #fotos img {
+      width: 300px;
+      height: 300px;
+      padding-bottom: 15px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 65px; }
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #0b83d4;
+  padding: 20px 0;
+  overflow: hidden;
+  flex-wrap: wrap;
+  margin: auto;
+  border: 8px black solid; }
+  footer .cajas-footer > {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    text-decoration: none;
+    width: 10%; }
+  footer .cajas-footer img {
+    width: 20%;
+    margin-right: 20px; }
+  footer .cajas-footer h4 {
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    font-family: cursive; }
+  footer .cajas-footer a {
+    text-decoration: none;
+    display: block;
+    color: rgba(245, 222, 179, 0.727);
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    font-family: cursive; }
+  footer .link-footer :hover {
+    color: black;
+    font-family: cursive; }
+  footer .cajas-footer a {
+    display: inline-block;
+    font-family: cursive; }
+    footer .cajas-footer a i {
+      display: inline-block;
+      font-size: 20px;
+      color: white;
+      border: 1px solid black;
+      border-radius: 50%;
+      width: 38px;
+      height: 38px;
+      line-height: 36px;
+      cursor: pointer;
+      margin-top: 20px;
+      text-align: center;
+      transition: ease-in-out .3s; }
+  footer .iconos-redes i:hover {
+    color: black;
+    background-color: white; }
+
+main #ubi {
+  text-align: center; }
+  main #ubi h2 {
+    font-family: cursive;
+    color: black; }
+  main #ubi .ubi-percu p {
+    color: black;
+    font-family: cursive; }
+    main #ubi .ubi-percu p a {
+      color: black;
+      text-decoration: none; }
+
+main img {
+  width: 50%; }
+
+@media (max-width: 320px) {
+  main #boedo {
+    background-size: contain; }
+    main #boedo .presentacion ul {
+      padding-top: 10px; }
+      main #boedo .presentacion ul li {
+        padding-top: 10px; } }

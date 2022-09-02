@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Link css -->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- titulo -->
+    <title>Boedo percucion</title>
+</head>
+
+<body>
+    <!-- Este es mi encabezado -->
+    <header>
+        <nav class="navbar navbar-nav-scroll bg-info  ">
+
+            <div class="container-fluid">
+                <img src="../boedo/00-logo.jpg" alt="" width="100" height="100">
+                <a class="navbar-brand" href="../index.html">Boedo percucion</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/carpetas/catalogo.html">Catalogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/carpetas/pedidos.html">Dejanos tu
+                                pedido</a>
+                        </li>                       
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/carpetas/ubicacion.html">Ubicacion</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <!-- Este es mi menu -->
+    <main>
+        <!-- Empieza carousel -->
+        <section id="pedidos-r">
+            <h1>Pedidos realizados</h1>
+            <p>Podes personalizar tu pedido a tu gusto</p>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/galeria/00-.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/galeria/04-.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/galeria/05.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/galeria/06.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/galeria/07.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/galeria/08.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </section>
+        <!-- Termina carousel -->
+
+        <!-- Realiza tu pedido -->
+        <section id="">
+            <h2>Realiza tu pedido</h2>
+            <p>tene en cuenta que los diseños, los tendra que enviar con el pedido</p>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre de tu Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre@gmail.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu pedido</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <select class="form-select" aria-label="Default select example">
+                    <label for="exampleFormControlTextarea1" class="form-label"> Instrumento </label>
+                    <option selected>seleccionar instrumento</option>
+                    <option value="1">Bombo</option>
+                    <option value="2">Repique</option>
+                    <option value="3">Redoblante</option>
+                    <option value="4">Platillos</option>
+                    <option value="5">Accesorios</option>
+                    <option value="6">Zurdos</option>
+                  </select>
+
+                  <h6>bombos</h6>
+                  <div class="input-group mb-3">
+                    
+                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                    <button class="btn btn-outline-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><hr class="dropdown-divider">Bombos</li>
+                      <li><a class="dropdown-item" href="#">24'</a></li>
+                      <li><a class="dropdown-item" href="#">26'</a></li>
+                      <li><a class="dropdown-item" href="#">34'</a></li>
+                      <li><hr class="dropdown-divider">Bombo gigantes</li>
+                      <li><a class="dropdown-item" href="#">40'</a></li>
+                    </ul>
+                  </div>
+                  <h6>Repique</h6>
+                  <div class="input-group mb-3">
+                    
+                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                    <button class="btn btn-outline-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><a class="dropdown-item" href="#">8'</a></li>
+                      <li><a class="dropdown-item" href="#">10'</a></li>
+                      <li><a class="dropdown-item" href="#">12'</a></li>
+                      <li><a class="dropdown-item" href="#">14'</a></li>
+                    </ul>
+                  </div>
+                  <h6>Redoblante</h6>
+                  <div class="input-group mb-3">
+                    
+                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                    <button class="btn btn-outline-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><a class="dropdown-item" href="#">8'</a></li>
+                      <li><a class="dropdown-item" href="#">10'</a></li>
+                      <li><a class="dropdown-item" href="#">12'</a></li>                      
+                    </ul>
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFileSm" class="form-label">Subir diseño</label>
+                    <input class="form-control form-control-sm" id="formFileSm" type="file">
+                  </div>
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check tu pedido</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                
+              </form>
+
+
+        </section>
+       
+    </main>
+    <!-- Este es mi footer -->
+    <footer>
+        <div class="cajas-footer">
+            <img src="/boedo/00-logo.jpg" alt="">
+        </div>
+        <div class="cajas-footer">
+            <h4>Julian calvo</h4>
+            <div class="link-footer"><a href="https://github.com/julianprogramas">trabaja con nosotros</a></div>
+
+        </div>
+        <div class="cajas-footer">
+            <h4>Redes sociales</h4>
+            <div class="iconos-redes">
+                <a href="https://www.youtube.com/watch?v=p4Iknm5mzyY&t=16s&ab_channel=ElGuerreroOficial"><i
+                        class="fa-brands fa-youtube"></i></a>
+
+                <a href="https://www.instagram.com/boedopercusion/?hl=es"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/BoedoPercusion"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!-- script footer -->
+    <script src="https://kit.fontawesome.com/fe4f1708a6.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
